@@ -5,7 +5,18 @@ packages:
 - .
 
 extra-deps:
-- amazonka-1.6.1@sha256:f58b63e83876f93aa03c54e54b3eb8ba9358af93819d41f4a5a8f8b7d8b8399c,3544
-- amazonka-core-1.6.1@sha256:b94fe11830b5fa707a4372ebcc0e659759b3e885677e3ecaca2939b299b0bc96,5143
-- http-client-0.6.4.1@sha256:ea569e3ebc00e7bb68162fbdf85aa63e653b974eaff63df7b972e4296687e25c,5322
-- unliftio-core-0.1.2.0@sha256:b0a7652ffce2284a6cebe05c99eb60573a8fb6631163f34b0b30a80b4a78cb23,1081
+- github: brendanhay/amazonka
+  commit: 91eb47e8e8af0597b2c496d319fd19c0f7e47bc3
+  subdirs:
+  - lib/amazonka
+  - lib/amazonka-core
+  - lib/services/amazonka-cloudwatch
+  - lib/services/amazonka-ecs
+  - lib/services/amazonka-s3
+  - lib/services/amazonka-secretsmanager
+  - lib/services/amazonka-ses
+  - lib/services/amazonka-sns
+  - lib/services/amazonka-sqs
+  - lib/services/amazonka-ssm
+  - lib/services/amazonka-sso
+  - lib/services/amazonka-sts
